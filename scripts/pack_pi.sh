@@ -13,6 +13,7 @@ NODE_ENV=production node_modules/.bin/webpack -p --config webpack.prod.config.js
 rm -rf node_modules
 
 NODE_ENV=production npm install
+npm install electron-packager --save-dev
 rm -rf Sitincator-linux-armv7l
 npm run pack:pi
 rm Sitincator-linux-armv7l/resources/app/{config,credentials}/*
