@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import moment from 'moment';
+import "moment/locale/de";
 import { isEmpty } from 'lodash/lang';
 import { isAllDayEvent } from '../util';
 
