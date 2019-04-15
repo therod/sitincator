@@ -56,20 +56,18 @@ export default class EventDetails extends Component {
 
     const btnClasses = classNames({
       small: true,
-      'expand-btn': true,
+      'expand-btn': false,
       expanded: expanded,
     });
 
     return (
-      <div className='event-details flex-container'>
-        <Button icon="arrow-up" className={btnClasses} handleClick={this.handleExpandDetails.bind(this)}/>
+      <div className='event-details'>
         <h3 className="event-details-status">
           {isCurrent ? 'AKTUELLE SITZUNG' : 'BEVORSTEHEND'}
         </h3>
         <h3 className="event-details-name">{event.summary}</h3>
         <EventDuration event={event} />
         <p className="event-details-creator">{event.creator.displayName || event.creator.email}</p>
-        <ul className="event-details-attendees">{this.attendees()}</ul>
       </div>
     );
   }

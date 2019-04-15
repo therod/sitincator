@@ -3,11 +3,8 @@
 // Colors
 $blue: #17BFC5;
 $white: #FFF;
-$black: #2E2E2E;
-$red: #F60755;
-
-// Settings
-$primary-color: $blue;
+$black: #1d2d35;
+$red: #ac1e1c;
 
 // Fonts
 $mark-pro-regular: 'Mark Pro';
@@ -15,7 +12,7 @@ $mark-pro-regular: 'Mark Pro';
 // Colors
 
 // Settings
-$primary-color: $blue;
+$primary-color: $black;
 $font-color: $black;
 
 // Fonts
@@ -32,6 +29,9 @@ body {
   font-size: 16px;
   color: $black;
   background-color: $white;
+  height: 480px;
+  width: 800px;
+  overflow: hidden;
 }
 h1, h2, h3 {
   margin-top: 0;
@@ -40,7 +40,7 @@ h1, h2, h3 {
 
 h1 {
   font-family: 'Mark Pro Medium';
-  font-size: 5rem;
+  font-size: 3rem;
 }
 
 h3 {

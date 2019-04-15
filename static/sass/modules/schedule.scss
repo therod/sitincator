@@ -1,4 +1,10 @@
 .schedule {
+  display: block !important;
+  position: fixed;
+  padding: 30px 0 0 0;
+  top: 0;
+  left: 0;
+  right: 0;
 
   .time-line {
     border: 1px solid $primary-color;
@@ -29,9 +35,11 @@
   .schedule-header {
     font-family: "Mark Pro Book";
     letter-spacing: 0.7px;
-    color: $primary-color;
-    margin: 65px 0 31px 0;
-    line-height: 44px;
+    color: $red;
+    line-height: 28px;
+    font-size: 18px !important;
+    text-align: center;
+    margin-bottom: 0;
   }
 
   .event-duration {
@@ -53,8 +61,8 @@
   }
 
   .schedule-event-list {
-    height: 543px;
-    overflow-y: auto;
+    overflow: scroll !important;
+    height: 348px;
     width: 100%;
   }
 
