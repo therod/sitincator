@@ -78,7 +78,7 @@ function readConfiguration() {
 }
 
 function createWindow () {
-  win = new BrowserWindow({width: 480, height: 800});
+  win = new BrowserWindow({width: 800, height: 480});
 
   if (process.env.NODE_ENV !== 'development')
     win.setFullScreen(true);
