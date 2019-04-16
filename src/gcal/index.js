@@ -70,7 +70,10 @@ function createDirectory(directory) {
 
 function storeToken(token) {
   createDirectory(CREDENTIALS_DIR);
-  fs.writeFile(SITINCATOR_TOKEN, JSON.stringify(token));
+
+  fs.writeFile(SITINCATOR_TOKEN, JSON.stringify(token), function(err, result) {
+     if(err) console.log('error', err);
+  });
 }
 
 function getAccessToken(client, code) {
