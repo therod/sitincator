@@ -67,7 +67,6 @@ export default class EventDetails extends Component {
         </h3>
         <h3 className="event-details-name">{event.summary}</h3>
         <EventDuration event={event} />
-        <p className="event-details-creator">{event.creator.displayName || event.creator.email}</p>
       </div>
     );
   }
