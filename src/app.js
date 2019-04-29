@@ -112,7 +112,7 @@ export default class App extends Component {
     const { events } = this.state;
     const footerText = isStatusView() ?
       <span>Terminplan <i className="icon icon-arrow-right"></i></span> :
-      <span><i className="icon icon-arrow-left"></i> zurück</span>;
+      <span><i className="icon icon-arrow-left"></i> zur&uuml;ck</span>;
 
     return (
       <div id="app">
