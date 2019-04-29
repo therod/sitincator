@@ -81,7 +81,8 @@ Below you find some starting points to configure the Raspberry Pi for Sitincator
 Create a script `start_meeting_room_app` using the following command to start Sitincator and initialize the Raspberry Pi's touch screen to portrait format. It also prevents the display from going into sleep mode.
 
     cat > /home/pi/start_meeting_room_app << EOF
-    DISPLAY=":0" xinput --set-prop 'FT5406 memory based driver' 'Coordinate Transformation Matrix'  0 1 0 -1 0 1 0 0 1
+    # DISABLE THIS FOR THE WIDESCREEN VERSION
+    # DISPLAY=":0" xinput --set-prop 'FT5406 memory based driver' 'Coordinate Transformation Matrix'  0 1 0 -1 0 1 0 0 1
 
     DISPLAY=":0" xset s off
     DISPLAY=":0" xset -dpms
